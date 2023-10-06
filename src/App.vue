@@ -15,7 +15,7 @@ const store = homeStore();
       </nav>
     </div>
   </header>
-{{ store.getApiToken }}
+{{ store.getApiToken }} 
 
   <RouterView />
 </template>
