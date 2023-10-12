@@ -12,4 +12,5 @@ app.use(createPinia())
 app.use(appStore);
 app.use(router)
 
+appStore.commit('openModal');
 app.mount('#app')

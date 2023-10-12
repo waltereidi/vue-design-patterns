@@ -1,11 +1,19 @@
 
-<script setup lang="ts">
+<script lang="ts">
 import { homeStore } from '@/stores/Home';
+export default { 
+    data(){
+        return {
+            homeStore : homeStore(), 
+        }
+    },
+    mounted(){
+        console.log(this.$route.params.routerParam);
+    }
 
-const store =homeStore();
-
+}
 </script>
 <template>
 <h1>About</h1>
-{{ store.getApiToken }} 
+{{ homeStore.getApiToken }} 
 </template>
